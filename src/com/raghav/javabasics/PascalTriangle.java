@@ -1,13 +1,10 @@
 package com.raghav.javabasics;
-import java.util.Scanner;
 
 class PascalTriangle {
     public static void main (String[] args) {
-        System.out.println("Enter number of rows:");
-        Scanner scanner = new Scanner(System.in);
-        int rows = scanner.nextInt();
-        scanner.close();
-        printPascalTriangle(rows);
+       PascalTriangle result = new PascalTriangle();
+        result.printPascalTriangle(5);
+        result.printPascalTriangle(8);
     }
 
     public static void printPascalTriangle(int rows)

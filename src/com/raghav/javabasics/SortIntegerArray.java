@@ -1,19 +1,17 @@
 package com.raghav.javabasics;
-
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class SortIntegerArray {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of the array that is to be created:");
-        int size = sc.nextInt();
-        int[] myArray = new int[size];
-        System.out.println("Enter the elements of the array:");
-
-        for (int i = 0; i < size; i++) {
-            myArray[i] = sc.nextInt();
-        }
+        SortIntegerArray result = new SortIntegerArray();
+        result.sortIntegerArray(new int[]{5,-5,6,2,1,99,23});
+        result.sortIntegerArray(new int[]{});
+    }
+    /**
+     * this method sorts an array
+     * @param myArray input arrayof int values
+     */
+        public void sortIntegerArray(int[] myArray){
         int[] newArray=myArray;
         for (int i = 0; i < myArray.length; i++) {
             for(int j = i+1; j < myArray.length; j++){
@@ -26,14 +24,6 @@ public class SortIntegerArray {
             }
         }
         System.out.println(Arrays.toString(newArray));
-    }
+        }
 }
-// myArray[]=[4,3,2,1]
-// myArray[]=[1,2,3,4]
-// 4
-// 3 4
-// 2 4 4
-// 1 4 4 4
-    //  1 3
-    //  1 2 3
-    //
+
