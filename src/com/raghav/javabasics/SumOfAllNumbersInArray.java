@@ -7,14 +7,19 @@ public class SumOfAllNumbersInArray {
         SumOfAllNumbersInArray result = new SumOfAllNumbersInArray();
         result.sumOfAllNums(new int[]{1,2,3,5,4,6,2});
         result.sumOfAllNums(new int[]{});
+        result.sumOfAllNums(new int[]{-1,-2,-3,-4, 5});
+
     }
 
     public void sumOfAllNums(int[] myArray){
-        int swapValue1; int swapValue2= 0;
-        for (int i = 0; i < myArray.length; i++) {
-            swapValue1 = myArray[i];
-            swapValue2 = swapValue2 + swapValue1;
+        if (myArray == null || myArray.length == 0) {
+            System.out.print("Array is Empty/Null");
+            return;
         }
-            System.out.println("Addition of all elements in the array is: "+swapValue2);
+        int swapValue= 0;
+        for (int i = 0; i < myArray.length; i++) {
+            swapValue = swapValue + myArray[i];
+        }
+            System.out.println("Addition of all elements in the array is: "+swapValue);
     }
 }

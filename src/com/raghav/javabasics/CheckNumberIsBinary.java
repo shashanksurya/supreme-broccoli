@@ -8,6 +8,8 @@ public class CheckNumberIsBinary {
         binary.isBinary(10101011);
         binary.isBinary(2545);
         binary.isBinary(-10101011);
+        binary.isBinary(1);
+        binary.isBinary(0);
     }
 
     public void isBinary(long num1){

@@ -2,24 +2,25 @@ package com.raghav.javabasics;
 // words, char, lines
 
 public class Counter {
-    public static void main(String[] args) {
-      String paragraph = "Change an Array\n" +
-              "new\n" +
-              "out\n" +
-              "Element";
-      Counter cnt = new Counter();
-     int[] temp =  cnt.wordsCharLines(paragraph);
-        System.out.println(paragraph);
 
-        for (int i=0;i<temp.length;i++)
-        System.out.println(temp[i]);
+    public static void main(String[] args) {
+        Counter cnt = new Counter();
+        cnt.wordsCharLines("hi my name is chaitu");
+        cnt.wordsCharLines("");
+        cnt.wordsCharLines(null);
+        cnt.wordsCharLines("this,is.also.a.sentence");
+        cnt.wordsCharLines("\n !@#$% !@#$%\n");
+        cnt.wordsCharLines("Change an Array\n" +
+                "new\n" +
+                "out\n" +
+                "Element");
     }
+
     public int words(String paragraph){
         int wordCount=1;
         for(int i=0;i<paragraph.length();i++){
-
             char c = paragraph.charAt(i);
-            if(c == ' ' || c == '\n'){
+            if(c == ' ' || c == '\n'|| c == ','|| c == '.'){
                 wordCount = wordCount+1;
             }
         }
@@ -44,12 +45,16 @@ public class Counter {
         }
         return lineCount;
     }
-    public int[] wordsCharLines(String paragraph){
-        int[] result= new int[3];
-        result[0]=words(paragraph);
-        result[1]=characters(paragraph);
-        result[2]=lines(paragraph);
-        System.out.println("Hello");
-    return result;
+    public void wordsCharLines(String paragraph){
+        if(paragraph==null || paragraph.length()==0){
+            System.out.println("String is empty/null");
+        }
+        else {
+            int[] result = new int[3];
+            result[0] = words(paragraph);
+            result[1] = characters(paragraph);
+            result[2] = lines(paragraph);
+            for (int i = 0; i < result.length; i++)
+                System.out.println(result[i]);        }
     }
 }

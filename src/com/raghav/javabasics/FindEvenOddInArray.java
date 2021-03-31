@@ -7,6 +7,8 @@ public class FindEvenOddInArray {
         FindEvenOddInArray result = new FindEvenOddInArray();
         result.findEvenOddNum(new int[]{5,-5,6,2,1,99,23});
         result.findEvenOddNum(new int[]{});
+        result.findEvenOddNum(new int[]{0});
+
     }
     public void findEvenOddNum(int[] myArray){
         int evenCount=0;

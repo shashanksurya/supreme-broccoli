@@ -5,7 +5,13 @@ public class RomanToNumber{
     {
         RomanToNumber rn = new RomanToNumber();
         System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal("VXIII"));
+        System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal("XVIII"));
+        System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal("123"));
+        System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal("@#$"));
+        System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal("000"));
         System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal("v"));
+        System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal(""));
+        System.out.println("Integer form of Roman Numeral is: "+ rn.romanToDecimal(null));
 
     }
 
@@ -29,6 +35,10 @@ public class RomanToNumber{
     }
 
     int romanToDecimal(String str){
+        if (str == null || str.length() == 0) {
+            return -1;
+        }
+
         int result = 0;
         for (int i = 0; i < str.length(); i++){
             int s1 = romanValue(str.charAt(i));
