@@ -5,7 +5,7 @@ package com.raghav.javabasics;
 public class FindMaxNumberInArray {
     public static void main(String[] args) {
         FindMaxNumberInArray result = new FindMaxNumberInArray();
-        result.findMax(new int[]{1,5,858,2,5,4,5,2158,1,587,4});
+        result.findMax(new int[]{1,5,858,2,5,4,5,2158,1,587,2158});
         result.findMax(new int[]{5,5,5});
         result.findMax(new int[]{});
         result.findMax(new int[]{-15,-16,-7});

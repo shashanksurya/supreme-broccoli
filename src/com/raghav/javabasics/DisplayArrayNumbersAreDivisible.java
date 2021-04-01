@@ -8,8 +8,10 @@ public class DisplayArrayNumbersAreDivisible {
     public static void main(String[] args) {
 
         DisplayArrayNumbersAreDivisible result = new DisplayArrayNumbersAreDivisible();
-        result.divisibilityChecker(new int[]{1,2,3,4,5,6,7,8,9,35});
+        result.divisibilityChecker(new int[]{1,2,3,4,5,6,7,8,9,-35});
         result.divisibilityChecker(new int[]{});
+        result.divisibilityChecker(new int[]{0});
+        result.divisibilityChecker(new int[]{-60, -70,-50});
     }
 
     public void divisibilityChecker(int[] myArray) {
@@ -23,6 +25,7 @@ public class DisplayArrayNumbersAreDivisible {
                     s += 1;
                 }
             }
+
             System.out.println("Array Numbers Divisible by "+divNumArr[divNum]+": "+Arrays.toString(resultArr));
         }
     }

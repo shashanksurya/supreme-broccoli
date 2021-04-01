@@ -25,7 +25,7 @@ public class FindAllEvenOddIndexedNumbersInArray {
         int[] oddCountArr = new int[myArr.length/2 ];
 
         for( int i=0; i< myArr.length; i++){
-            if(i == 0 || i % 2 ==0){
+            if(i % 2 ==0){
                 evenCount = evenCount + 1;
                 evenCountArr[count1]=myArr[i];
                 count1+=1;
@@ -36,16 +36,13 @@ public class FindAllEvenOddIndexedNumbersInArray {
                 count2+=1;
             }
         }
+
+        System.out.print("Even indices list: ");
         for(int i=0; i<count1;i++){
-            if(i==0){
-                System.out.print("Even indices list: ");
-            }
             System.out.print(evenCountArr[i]+" ");
         }
+        System.out.print("   Odd indices list: ");
         for(int i=0; i<count2;i++){
-            if(i==0){
-                System.out.print("   Odd indices list: ");
-            }
             System.out.print(oddCountArr[i]+" ");
         }    }
 }
