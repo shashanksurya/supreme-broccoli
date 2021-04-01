@@ -1,35 +1,28 @@
 //Search for an element in a given array and return true if the element is found, else false.
 package com.raghav.javabasics;
 
-import java.util.Scanner;
-
 public class FindElementInArray {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of the array that is to be created::");
-        int size = sc.nextInt();
-        int[] myArray = new int[size];
-        System.out.println("Enter the elements of the array ::");
+        FindElementInArray result = new FindElementInArray();
+        result.findElement(new int[]{5,-5,6,2,1,99,23}, 99);
+        result.findElement(new int[]{}, 1);
+        result.findElement(new int[]{-1,6,7}, -1);
 
-        for (int i = 0; i < size; i++) {
-            myArray[i] = sc.nextInt();
+
+    }
+
+    public void findElement(int[] myArray,int findNumSomething){
+        if (myArray == null || myArray.length == 0) {
+            System.out.println("Array is Empty/Null");
+            return;
         }
-//        FindElementInArray m = new FindElementInArray();
-        System.out.println("Enter integer: ");
-
-        Scanner myInput = new Scanner(System.in);
-        int a = myInput.nextInt();
         for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == a) {
+            if (myArray[i] == findNumSomething) {
                 System.out.println("Element found in the array");
+                break;
             }
             else if(i==myArray.length-1)
                 System.out.println("Element not found in the array");
-
         }
     }
 }
-
-
-//take array input from user
-//compare each element in array with given element
