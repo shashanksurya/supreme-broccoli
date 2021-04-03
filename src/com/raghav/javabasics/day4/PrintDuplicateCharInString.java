@@ -2,7 +2,7 @@ package com.raghav.javabasics.day4;
 //Given a string, write a program to print the duplicate characters in the String.
 
 public class PrintDuplicateCharInString {
-    boolean abc= false;
+    boolean repeatingFlag= false;
     public static void main(String[] args) {
         PrintDuplicateCharInString result = new PrintDuplicateCharInString();
         result.findDuplicates("program to print the duplicate characters in the String.");
@@ -22,7 +22,7 @@ public class PrintDuplicateCharInString {
                 if (str.charAt(i) == str.charAt(j) && searchNewArray(newArray, str.charAt(i)) == true) {
                     newArray[count] = str.charAt(i);
                     count += 1;
-                    abc=true;
+                    repeatingFlag=true;
                 }
             }
         }
@@ -32,7 +32,7 @@ public class PrintDuplicateCharInString {
     }
 
     public boolean searchNewArray(char[] newArray, char searchNum) {
-        if(abc==false) {
+        if(repeatingFlag==false) {
             return true;
         } else {
             for (int k = 0; k < newArray.length; k++) {

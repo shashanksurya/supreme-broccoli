@@ -5,14 +5,14 @@ public class FindFirstNonRepeatingCharAscii {
     public static void main(String args[]) {
         FindFirstNonRepeatingCharAscii result = new FindFirstNonRepeatingCharAscii();
         result.findNonRepeatingChar("abc");
-        result.findNonRepeatingChar("c");
+        result.findNonRepeatingChar("b");
+        result.findNonRepeatingChar("  &&  c");
         result.findNonRepeatingChar("cccc0000c");
-        result.findNonRepeatingChar("ascisa");
-        result.findNonRepeatingChar("abhddabc");
+        result.findNonRepeatingChar("ascisca");
+        result.findNonRepeatingChar("abcdedabc");
         result.findNonRepeatingChar("");
         result.findNonRepeatingChar(null);
     }
-
 
     public void findNonRepeatingChar(String str) {
         if (str == null || str.length() == 0) {
@@ -25,18 +25,14 @@ public class FindFirstNonRepeatingCharAscii {
             val = (int) str.charAt(i);
             arr[val] += 1;
         }
-        for (int j = 0; j < str.length(); j++) {
+        int j=0;
+        for (j = 0; j < str.length(); j++) {
             val = (int) str.charAt(j);
             if (arr[val] == 1) {
                 System.out.println(str.charAt(j));
-                break;
-            }
-            else {
-                if(j==str.length()-1){
-                    System.out.println("No non repetitive num in string");
-                }
+                return;
             }
         }
-
+        System.out.println("No non repetitive num in string");
     }
 }

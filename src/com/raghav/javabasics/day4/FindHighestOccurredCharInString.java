@@ -5,7 +5,7 @@ public class FindHighestOccurredCharInString {
         FindHighestOccurredCharInString result = new FindHighestOccurredCharInString();
         result.charCount("abc");
         result.charCount("");
-        result.charCount("cccc0000c");
+        result.charCount("cccc00000c");
         result.charCount("$1234$1234$123");
         result.charCount("abhddabc");
         result.charCount(null);
@@ -24,7 +24,7 @@ public class FindHighestOccurredCharInString {
             val = (int) str.charAt(i);
             myArray[val] += 1;
         }
-            int swapValue1 = 1; int swapValue2= 0;
+            int swapValue1 = 1;
             for(int i=0; i< myArray.length; i ++){
                 if(myArray[i]>0 && myArray[i] >= swapValue1){
                     swapValue1 = myArray[i];
