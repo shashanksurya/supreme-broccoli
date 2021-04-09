@@ -33,6 +33,7 @@ public class CountIntCharSpecialCharInString {
             } else {
                 if ((int)str.charAt(i) > 0) {
                     specialCount++;
+      
                 }
             }
         }
