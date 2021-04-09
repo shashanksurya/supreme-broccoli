@@ -1,4 +1,4 @@
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 
 // Given an array of numbers, write a program to find the number of odd and number of even numbers.
 

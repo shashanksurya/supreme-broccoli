@@ -1,4 +1,4 @@
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 // Write a java program to check whether given number is binary or not. A binary number is a number which contains only 0 or 1.
 
 public class CheckNumberIsBinary {

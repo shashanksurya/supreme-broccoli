@@ -1,4 +1,4 @@
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 //Given two numbers, write a program to compare the numbers and return the max among them.
 
 public class CompareTwoNumbersReturnMax {

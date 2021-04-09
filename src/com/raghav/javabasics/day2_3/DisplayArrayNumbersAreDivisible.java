@@ -1,4 +1,4 @@
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 import java.util.Arrays;
 
 //Given an array of numbers, write a program to identify all numbers divisible by 2,
