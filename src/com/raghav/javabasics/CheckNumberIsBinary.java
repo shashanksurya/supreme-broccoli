@@ -5,12 +5,13 @@ public class CheckNumberIsBinary {
 
     public static void main(String args[]) {
         CheckNumberIsBinary binary = new CheckNumberIsBinary();
-        binary.isBinary(10101011);
+        binary.isBinary(101);
         binary.isBinary(2545);
         binary.isBinary(-10101011);
         binary.isBinary(1);
         binary.isBinary(0);
     }
+
 
     public void isBinary(long num1){
         String s = String.valueOf(num1);
