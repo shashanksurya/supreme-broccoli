@@ -1,4 +1,4 @@
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 import java.util.Arrays;
 
 public class SortIntegerArray {

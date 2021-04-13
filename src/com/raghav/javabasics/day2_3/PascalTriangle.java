@@ -1,4 +1,4 @@
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 
 class PascalTriangle {
     public static void main (String[] args) {

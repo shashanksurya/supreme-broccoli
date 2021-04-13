@@ -1,5 +1,5 @@
 //Search for an element in a given array and return true if the element is found, else false.
-package com.raghav.javabasics;
+package com.raghav.javabasics.day2_3;
 
 public class FindElementInArray {
     public static void main(String[] args) {
