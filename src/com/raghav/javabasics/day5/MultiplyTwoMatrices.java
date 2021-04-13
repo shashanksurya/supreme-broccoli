@@ -16,11 +16,6 @@ public class MultiplyTwoMatrices {
             return;
         }
         int c[][] = new int[2][2];
-        for(int i=0; i<b.length; i++) {
-            for (int j = 0; j < b.length; j++) {
-                c[i][j] = 0;
-            }
-        }
         for (int i = 0; i < a.length; i++) {//a row
             for (int j = 0; j < b.length; j++) {//b coloumn
                 for (int k = 0; k < a.length; k++) {// a coloumn

@@ -17,7 +17,7 @@ public class ConvertArrayOfStringToArrayList {
         }
         ArrayList<String> newStr = new ArrayList();
         for(int i=0; i<str.length;i++){
-            newStr.add(i, str[i]);
+            newStr.add(str[i]);
         }
         for (int i =0; i<str.length;i++) {
             System.out.print(newStr.get(i));

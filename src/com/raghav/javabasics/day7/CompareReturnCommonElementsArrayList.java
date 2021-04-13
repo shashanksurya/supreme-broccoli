@@ -23,23 +23,7 @@ public class CompareReturnCommonElementsArrayList {
                 arraylist.add(arrList1.get(i));
             }
         }
-        for (int i = 0; i < arrList2.size(); i++) {
-            if (arrList1.contains(arrList2.get(i))) {
-                arraylist.add(arrList2.get(i));
-            }
-        }
-        removeDuplicates(arraylist);
-    }
-
-    public void removeDuplicates(List arrayList) {
-        Set<Integer> set = new HashSet<>();
-        set.addAll(arrayList);
-        arrayList.addAll(set);
-        if (set == null || set.size() == 0) {
-            System.out.println("No common elements!!!");
-            return;
-        }
-        for (int i : set) {
+        for (int i : arraylist) {
             System.out.print(i + " ");
         }
     }
